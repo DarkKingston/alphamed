@@ -20,6 +20,9 @@ body {
 .footer {
 	flex: 0 0 auto;
 }
+.footer{
+  height: 150px;
+}
 
 .container{
   max-width: 1200px;
@@ -37,6 +40,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 184px;
+    cursor: pointer;
 }
 
 .red{
@@ -50,6 +54,7 @@ body {
   color: #FFFFFF;
   padding: 16px 0;
 	width: 186px;
+  cursor: pointer;
 }
 
 
