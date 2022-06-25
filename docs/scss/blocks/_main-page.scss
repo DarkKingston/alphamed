@@ -107,7 +107,6 @@
 
 .clinics__wrapper{
     &__title{
-        @include h3;
         font-size: 32px;
         line-height: 44px;
     }
@@ -312,7 +311,6 @@
             padding-top: 25px;
             padding-left: 30px;
             &__title{
-                @include h3;
                 font-size: 32px;
                 line-height: 44px;
             }
@@ -372,4 +370,224 @@
             margin-top: 47px;
         }
     }
+}
+
+.diagnostic{
+    padding-top: 87px;
+    padding-bottom: 55px;
+}
+
+.diagnostic__wrapper{
+    &__box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        &__item{
+            margin-right: 50px;
+            &__title{
+                font-weight: 800;
+                font-size: 32px;
+                line-height: 44px;
+                max-width: 355px;
+                width: 100%;
+            }
+            &__subtitle{
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 25px;
+                color: #000000;
+                margin-top: 13px;
+            }
+            &__descr{
+                line-height: 24px;
+                color: #000000;
+                max-width: 680px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.diagnostic__det{
+    position: relative;
+    background: #F0F9FF;
+    border-radius: 2px;
+    padding-top: 50px;
+    padding-left: 33px;
+    padding-bottom: 37px;
+    margin-top: 40px;
+    &__title{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+.diagnostic_slider{
+    margin-top: 53px;
+    margin-right: unset !important;
+    margin-left: 100px !important;
+
+}
+
+.slider_btns{
+    position: absolute;
+    width: 180px;
+    top: 70px;
+    right: 36px;
+}
+
+.prev2,.next2{
+    border: 1px solid #0C4C91;
+    border-radius: 3px;
+    z-index: 10;
+}
+
+.pag2{
+    line-height: 19px;
+    color: $blue;
+    z-index: 2 !important;
+    bottom: -4px !important;
+}
+
+.det__wrapper{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    &__img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 72px;
+        height: 72px;
+        border: 1px solid #CAE0F8;
+        border-radius: 3px;
+        background: #fff;
+
+    }
+    &__title{
+        font-weight: 700;
+        line-height: 22px;
+        color: #000000;
+        margin-top: 14px;
+        max-width: 165px;
+        width: 100%;
+    }
+}
+.det-active{
+    background: $red;
+}
+
+.det-active-title{
+    color: $red;
+}
+
+.hover{
+    display: none;
+}
+
+.hover-active{
+    display: inherit;
+}
+
+.hover-off-active{
+    display: none;
+}
+
+.diagnostic__info{
+    display: none;
+    position: relative;
+    margin: 0 35px;
+    margin-top: 30px;
+    padding: 0 35px;
+    background: #FFFFFF;
+    border: 1px solid #CAE0F8;
+    border-radius: 3px;
+    &__arrow{
+        position: absolute;
+        top: -13px;
+        left: 102px;
+    }
+    &__box{
+        display: flex;
+        flex-direction: column;
+        &__menu{
+            width: 320px;
+            margin-right: 30px;
+            display: flex;
+            flex-direction: column;
+            list-style-type: disc !important;
+            padding-top: 40px !important;
+            padding-bottom: 45px !important;
+            &__item{
+                display: flex;
+                align-items: center;
+                margin-top: 15px;
+                max-width: 230px;
+                justify-content: space-between;
+                width: 100%;
+                cursor: pointer;
+                position: relative;
+                font-weight: 600;
+                line-height: 21px;
+                color: #000000;
+                .arrow_diagnostic{
+                    position: absolute;
+                    width: 10px;
+                    right: -18px;
+                }
+            }
+        }
+        &__title{
+            font-weight: 700;
+            line-height: 19px;
+            color: #000000;
+            margin-top: 54px;
+        }
+        &__descr{
+            max-width: 685px;
+            max-width: 100%;
+            font-weight: 300;
+            line-height: 22px;
+            color: #000000;
+            p{
+                margin-top: 30px;
+            }
+        }
+        &__btn{
+            margin-top: 46px;
+            width: 285px;
+            padding: 14px 0;
+            margin-bottom: 77px;
+        }
+    }
+}
+
+.diagnostic__info__box__menu{
+    list-style: disc !important;
+    list-style-type: disc !important;
+}
+.diagnostic-item-active{
+    color: $red;
+}
+
+.arrow_diagnostic{
+    display: none;
+}
+
+.arrow-active-diagnostic{
+    display: inherit;
+}
+
+.tab_diagnostic{
+    display: none;
+}
+
+.diagnostic-show{
+    display: inherit;
+}
+
+.diagnostic-info-show{
+    display: flex;
+    flex-direction: row;
 }

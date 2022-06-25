@@ -57,5 +57,7 @@ body {
   cursor: pointer;
 }
 
-
+.blue_h3{
+  @include h3;
+}
 
