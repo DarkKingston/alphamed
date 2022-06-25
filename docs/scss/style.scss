@@ -7,4 +7,69 @@
 .container__header{
     width: 1440px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav__wrapper{
+    padding: 11px 0;
+    background: #F0F9FF;
+    border: 1px solid #C0DEED;
+    &__box{
+        display: flex;
+        flex-direction: row;
+        &:first-child{
+        max-width: 1300px;
+        width: 100%;
+        justify-content: space-between;
+        margin-right: 73px;
+        }
+        &__pretitle{
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 19px;
+            color: $titles;
+        }
+        &__menu{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 274px;
+            &__item{
+                font-size: 13px;
+                line-height: 18px;
+                &__link{
+                    cursor: pointer;    
+                    color: $titles;
+                }
+            }
+        }
+        &__lang{
+            font-size: 13px;
+            line-height: 18px;
+            color: #B2B2B2;
+            margin-right: 21px;
+            cursor: pointer;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.lang-active{
+    height: 26px;
+    border-bottom: 1px solid #0C4C91;
+    color: $blue;
+}
+
+.header__wrapper{
+    height: 106px;
+
+}
+
+.logo{
+    max-width: 243px;
+    width: 100%;
 }
