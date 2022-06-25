@@ -65,3 +65,38 @@
 .swiper-button-next::after, .swiper-button-prev::after{
     --swiper-navigation-size: 8px;
 }
+
+.about{
+    margin-top: 63px;
+}
+
+.about__wrapper{
+    &__pretitle{
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+        color:$red;
+    }
+    &__title{
+        @include title;
+        font-size: 32px;
+        line-height: 44px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    &__subtitle{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        margin-top: 1px;
+        text-align: center;
+    }
+    &__descr{
+        margin-top: 25px;
+        line-height: 25px;
+        text-align: center;
+        max-width: 1080px;
+        width: 100%;
+    }
+}
