@@ -288,3 +288,88 @@
 .tab-active{
     display: inherit;
 }
+
+.consulting{
+    background: #F0F9FF;
+}
+
+.consulting__wrapper{
+    padding-top: 53px;
+    padding-bottom: 61px;
+    &__box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        &__item{
+            max-width: 386px;
+            width: 100%;
+            height: 174px;
+            background: #F0F9FF;
+            border: 1px solid #FFFFFF;
+            box-shadow: 0px 6px 8px rgba(12, 76, 145, 0.08), 0px 8px 20px rgba(9, 71, 138, 0.08);
+            border-radius: 3px;
+            margin-right: 20px;
+            padding-top: 25px;
+            padding-left: 30px;
+            &__title{
+                @include h3;
+                font-size: 32px;
+                line-height: 44px;
+            }
+            &__subtitle{
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 25px;
+            }
+        }
+        &__descr{
+            line-height: 24px;
+            max-width: 637px;
+            width: 100%;
+            span{
+                color: $red;
+            }
+        }
+
+        &__card{
+            margin-top: 20px;
+            max-width: 386px;
+            width: 100%;
+            margin-right: 20px;
+            height: 395px;
+            background: #F0F9FF;
+            border: 1px solid #FFFFFF;
+            box-shadow: 0px 6px 8px rgba(12, 76, 145, 0.08), 0px 8px 20px rgba(9, 71, 138, 0.08);
+            border-radius: 3px;
+            padding: 25px 25px 32px;
+            &:last-child{
+                margin-right: 0;
+            }
+            &__item{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                font-weight: 700;
+                line-height: 19px;
+                margin-top: 28px;
+                letter-spacing: 0.01em;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                color: $consult;
+                &:first-child{
+                    margin-top: 0;
+                }
+                span{
+                    margin-right: 26px;
+                }
+            }
+
+        }
+        &__btn{
+            margin: 0 auto;
+            max-width: 386px;
+            width: 100%;
+            padding: 14px 0;
+            margin-top: 47px;
+        }
+    }
+}
