@@ -128,7 +128,7 @@ header{
             line-height: 18px;
             color: $titles;
             span{
-                margin-top: 7px;
+                margin-top: 8px;
                 margin-left: 5px;
             }
         }
@@ -157,26 +157,4 @@ header{
 
 .logo{
     width: 243px;
-}
-
-.white{
-    color: #B90D06;
-    border: 1px solid #B90D06;
-    border-radius: 2px;
-    height: 51px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 16px 0;
-    width: 184px;
-}
-
-.red{
-    background: #B90D06;
-    border-radius: 2px;
-    font-weight: 600;
-    font-size: 14px;
-    color: #FFFFFF;
-    padding: 16px 0;
 }
