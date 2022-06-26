@@ -602,6 +602,7 @@
             border-bottom: 1px solid $red;
             border-top: 1px solid $red;
             border-left: 1px solid $red;
+            z-index: 9;
             
         }
         &:last-child{
@@ -613,6 +614,7 @@
             padding-left: 34px;
             .bg-hand{
                 img{
+                    z-index: 5;
                     height: 109%;
                     object-fit: cover;
                     
@@ -678,6 +680,7 @@
     right: 0px;
     top: 0;
     bottom: 0;
+    z-index: -1;
     img{
         height: 100%;
     }
@@ -815,6 +818,7 @@
 .news__slider{
     max-width: 388px;
     width: 100%;
+    cursor: pointer;
     &__box{
         display: flex;
         flex-direction: column;
