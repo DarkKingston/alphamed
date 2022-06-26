@@ -88,3 +88,74 @@ for(let i = 0; i < menuItem.length; i++){
         arrDiagnostic[i].classList.add('arrow-active-diagnostic');
     })
 }
+
+//slider news
+const newsSlider1 = new Swiper('.news_carousel1', {
+    direction: 'horizontal',
+    slidesPerView: 3,
+    spaceBetween: 19,
+    pagination: {
+      el: '.pag3',
+      type: 'fraction',
+    },
+  
+    navigation: {
+      nextEl: '.next3',
+      prevEl: '.prev3',
+    },
+});
+const newsSlider2 = new Swiper('.news_carousel2', {
+    direction: 'horizontal',
+    slidesPerView: 3,
+    spaceBetween: 19,
+    pagination: {
+      el: '.pag3',
+      type: 'fraction',
+    },
+  
+    navigation: {
+      nextEl: '.next3',
+      prevEl: '.prev3',
+    },
+});
+
+//tab news
+let newsTab = document.querySelectorAll('.news__wrapper__box__tabs__item');
+let newsSlider = document.querySelectorAll('.news_carousel');
+ for(let i = 0; i < newsTab.length; i++){
+    newsTab[i].addEventListener("click", function(){
+        for(let j = 0; j < newsTab.length; j++){
+            newsTab[j].classList.remove('tab-news-active');
+            newsSlider[j].classList.remove('news-active');
+        }
+        newsTab[i].classList.add('tab-news-active');
+        newsSlider[i].classList.add('news-active');
+    })
+}
+
+//language change
+let lang = document.querySelectorAll('.nav__wrapper__box__lang');
+
+for(let i = 0; i < lang.length; i++){
+    lang[i].addEventListener("click", function(){
+        for(let j = 0; j < lang.length; j++){
+            lang[j].classList.remove('lang-active');
+        }
+        lang[i].classList.add('lang-active');
+    });
+}
+
+//slider contact
+const contactSliders = new Swiper('.contact_slider', {
+    direction: 'horizontal',
+    slidesPerView: 1,
+    pagination: {
+      el: '.pag4',
+      type: 'fraction',
+    },
+  
+    navigation: {
+      nextEl: '.next4',
+      prevEl: '.prev4',
+    },
+});
