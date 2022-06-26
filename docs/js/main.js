@@ -75,15 +75,15 @@ for(let i = 0; i < details.length; i++){
 // tab diagnostic content
 let content = document.querySelectorAll('.tab_diagnostic');
 let arrDiagnostic = document.querySelectorAll('.arrow_diagnostic');
-
+let menuItem = document.querySelectorAll('.diagnostic__info__box__menu__item');
 for(let i = 0; i < menu.length; i++){
-    menu[i].addEventListener('click', function(){
+    menuItem[i].addEventListener('click', function(){
         for(let j = 0; j < menu.length; j++){
-            menu[j].classList.remove('diagnostic-item-active');
+            menuItem[j].classList.remove('diagnostic-item-active');
             content[j].classList.remove('diagnostic-show');
             arrDiagnostic[j].classList.remove('arrow-active-diagnostic');
         }
-        menu[i].classList.add('diagnostic-item-active');
+        menuItem[i].classList.add('diagnostic-item-active');
         content[i].classList.add('diagnostic-show');
         arrDiagnostic[i].classList.add('arrow-active-diagnostic');
     })

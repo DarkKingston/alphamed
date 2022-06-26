@@ -520,7 +520,7 @@
             padding-top: 40px !important;
             padding-bottom: 45px !important;
             &__item{
-                display: flex;
+                display: list-item;
                 align-items: center;
                 margin-top: 15px;
                 max-width: 230px;
@@ -562,11 +562,6 @@
         }
     }
 }
-
-.diagnostic__info__box__menu{
-    list-style: disc !important;
-    list-style-type: disc !important;
-}
 .diagnostic-item-active{
     color: $red;
 }
@@ -576,7 +571,9 @@
 }
 
 .arrow-active-diagnostic{
-    display: inherit;
+    display: flex;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .tab_diagnostic{
