@@ -55,6 +55,7 @@
         height: 51px;
         display: flex;
         align-items: center;
+        margin-right: 19px;
     }
     legend{
         font-size: 13px;
@@ -95,6 +96,133 @@
 
 .doctors{
     background: #F0F9FF;
-    height: 200px;
     margin-top: 95px;
+    padding-top: 127px;
+    padding-bottom: 142px;
+}
+
+.doctors__wrapper{
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px 20px;
+    &__box{
+        position: relative;
+        padding-top: 30px;
+        padding-bottom: 18px;
+        padding-left: 23px;
+        padding-right: 26px;
+        background: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        box-shadow: 0px 0px 20px rgba(12, 76, 145, 0.05);
+        border-radius: 3px;
+        max-width: 575px;
+        width: 100%;
+        &__ico{
+            position: absolute;
+            top: 30px;
+            right: 24px;
+        }
+        &__item{
+            display: flex;
+            flex-direction: row;
+            &__img{
+                width: 124px;
+                height: 124px;
+                margin-right: 19px;
+            }
+            &__content{
+                display: flex;
+                flex-direction: column;
+                &__experience{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    &__year{
+                        margin-right: 19px;
+                        font-size: 13px;
+                        line-height:20px;
+                    }
+                    &__job{
+                        font-size: 13px;
+                        line-height:20px;
+                    }
+                }
+                &__info{
+                    margin-top: 22px;
+                    &__name{
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 27px;
+                        color: #000000;
+                    }
+                    &__profil{
+                        margin-top: 7px;
+                        font-weight: 600;
+                        font-size: 15px;
+                        line-height: 21px;
+                        color: #B90D06;
+                        max-width: 375px;
+                        width: 100%;
+                    }
+                }
+            }
+            &__area{
+                display: flex;
+                flex-direction: column;
+                margin-right: 12px;
+                padding-top: 7px;
+                padding-bottom: 8px;
+                padding-left: 14px;
+                max-width: 330px;
+                width: 100%;
+                background: #F0F9FF;
+                border-radius: 3px;
+                margin-top: 27px;
+                &__region{
+                    font-weight: 600;
+                    font-size: 13px;
+                    line-height: 20px;
+                    color: #000000;
+                }
+                &__street{
+                    font-weight: 300;
+                    font-size: 13px;
+                    line-height: 20px;
+                }
+            }
+            &__btn{
+                width: 199px;
+                padding: 18px 0;
+                margin-top: 27px;
+            }
+            &__info{
+                margin-top: 10px;
+                font-size: 13px;
+                line-height: 20px;
+                &__mes{
+                    font-weight: 300;
+                }
+                &__data{
+                    font-weight: 600;
+                }
+            }
+            &:last-child{
+                justify-content: space-between;
+                
+            }
+            &__link{
+                display: flex;
+                align-items: flex-end;
+                font-size: 13px;
+                line-height: 20px;
+                color: #BA0E0C;
+                span{
+                    margin-bottom: 5px;
+                    margin-left: 9px;
+                }
+            }
+        }
+    }
 }
