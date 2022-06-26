@@ -76,9 +76,9 @@ for(let i = 0; i < details.length; i++){
 let content = document.querySelectorAll('.tab_diagnostic');
 let arrDiagnostic = document.querySelectorAll('.arrow_diagnostic');
 let menuItem = document.querySelectorAll('.diagnostic__info__box__menu__item');
-for(let i = 0; i < menu.length; i++){
+for(let i = 0; i < menuItem.length; i++){
     menuItem[i].addEventListener('click', function(){
-        for(let j = 0; j < menu.length; j++){
+        for(let j = 0; j < menuItem.length; j++){
             menuItem[j].classList.remove('diagnostic-item-active');
             content[j].classList.remove('diagnostic-show');
             arrDiagnostic[j].classList.remove('arrow-active-diagnostic');
