@@ -142,5 +142,20 @@ for(let i = 0; i < lang.length; i++){
             lang[j].classList.remove('lang-active');
         }
         lang[i].classList.add('lang-active');
-    })
+    });
 }
+
+//slider contact
+const contactSliders = new Swiper('.contact_slider', {
+    direction: 'horizontal',
+    slidesPerView: 1,
+    pagination: {
+      el: '.pag4',
+      type: 'fraction',
+    },
+  
+    navigation: {
+      nextEl: '.next4',
+      prevEl: '.prev4',
+    },
+});
