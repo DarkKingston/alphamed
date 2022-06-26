@@ -374,7 +374,6 @@
 
 .diagnostic{
     padding-top: 87px;
-    padding-bottom: 55px;
 }
 
 .diagnostic__wrapper{
@@ -587,4 +586,99 @@
 .diagnostic-info-show{
     display: flex;
     flex-direction: row;
+}
+
+.banners__wrapper{
+    &__box{
+        margin-top: 56px;
+        &:first-child{
+            padding-top: 48px;
+            padding-left: 34px;
+            padding-bottom: 64px;
+            background-color: $red;
+            position: relative;
+            height: 420px;
+            border-radius: 2px;
+            border-bottom: 1px solid $red;
+            border-top: 1px solid $red;
+            border-left: 1px solid $red;
+            
+        }
+        &:last-child{
+            background: rgba(165, 225, 255, 0.24);
+            border-radius: 3px;
+            position: relative;
+            padding-bottom: 70px;
+            padding-top: 70px;
+            padding-left: 34px;
+            .bg-hand{
+                img{
+                    height: 109%;
+                    object-fit: cover;
+                    
+                }
+            }
+        }
+        &__title{
+            margin-top: 30px;
+            font-weight: 800;
+            font-size: 26px;
+            line-height: 35px;
+            color: #FFFFFF;
+            max-width: 480px;
+            width: 100%;
+        }
+        &__descr{
+            margin-top: 15px;
+            font-weight: 600;
+            line-height: 22px;
+            color: #FFFFFF;
+            max-width: 480px;
+            width: 100%;
+        }
+        &__btn{
+            background: #FFFFFF;
+            border-radius: 2px;
+            width: 228px;
+            padding: 15px 0;
+            margin-top: 43px;
+        }
+        &__pretitle{
+            font-weight: 700;
+            line-height: 19px;
+            letter-spacing: 0.01em;
+            color: #B90D06;
+        }
+        &__slogan{
+            margin-top: 26px;
+            @include h3;
+            font-size: 26px;
+            line-height: 35px;
+            max-width: 650px;
+            width: 100%;
+        }
+        &__info{
+            margin-top: 16px;
+            font-weight: 600;
+            line-height: 22px;
+            color: #000000;
+            max-width: 610px;
+            width: 100%;
+        }
+        &__button{
+            margin-top: 54px;
+            padding-top: 14px 0;
+            width: 310px;
+        }
+    }
+}
+
+.bg-hand{
+    position: absolute;
+    right: 0px;
+    top: 0;
+    bottom: 0;
+    img{
+        height: 100%;
+    }
 }
