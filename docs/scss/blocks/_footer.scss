@@ -1,0 +1,91 @@
+.footer__wrapper{
+    position: absolute;
+    &:first-child{
+        width: 286px;
+        right: 0;
+    }
+    &:nth-child(2){
+        width: 915px;
+        left: 0;
+    }
+}
+
+.white-bg, .blue-bg{
+    width: 50%;
+}
+
+.first_footer{
+    position: relative;
+    background-color: $blue;
+    border: 1px solid #ededed;
+    height: 245px;
+    background-position: 0 0;
+}
+
+.white-bg{
+    position: absolute;
+    background: #fff;
+    height: 245px;
+    left: 0;
+    right: 0;
+    width: 40%;
+    border: 1px solid #ededed;
+}
+
+.footer{
+    &__wrapper{
+        position: relative;
+        display: flex;
+        align-items: start;
+        padding-top: 42px;
+        &__box{
+            &:first-child{
+                margin-right: 200px;
+                                
+            }
+            &:nth-child(2){
+                max-width: 204px;
+            }
+            &__logo{
+            }
+            &__descr{
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 20px;
+                color: #000000;
+                max-width: 253px;
+                width: 100%;
+                margin-top: 26px;
+            }
+            &__list{
+                &__item{
+                    font-weight: 300;
+                    font-size: 14px;
+                    color: $white;
+                    line-height: 25px;
+                    &:nth-child(1){
+                        font-weight: 600;
+                        font-size: 14px;
+                        margin-bottom: 5px;
+                    }    
+                }
+            }
+            &__contacts{
+                &__item{
+                    font-weight: 600;
+                    font-size: 14px;
+                    color: $white;
+                }
+                a{
+                    font-weight: 800;
+                    font-size: 18px;
+                    color: $white;
+                }
+            }
+        }        
+    }
+}
+
+.second_footer{
+    border-bottom: 1px solid #ededed;
+}

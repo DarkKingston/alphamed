@@ -26,7 +26,30 @@ body {
   padding: 0 15px;
 }
 
+.white{
+    color: #B90D06;
+    border: 1px solid #B90D06;
+    border-radius: 2px;
+    height: 51px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 184px;
+}
 
+.red{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #B90D06;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #FFFFFF;
+  padding: 16px 0;
+  width: 186px;
+}
 
 
 
