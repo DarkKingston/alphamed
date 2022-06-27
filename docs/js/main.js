@@ -3,16 +3,16 @@ const swiper = new Swiper('.slider-bg', {
     loop: true,
     slidesPerView: 1,
     pagination: {
-      el: '.pag1',
-      type: 'bullets',
+        el: '.pag1',
+        type: 'bullets',
     },
-  
+
     navigation: {
-      nextEl: '.next1',
-      prevEl: '.prev1',
+        nextEl: '.next1',
+        prevEl: '.prev1',
     },
 });
-  
+
 const swiperStreet = new Swiper('.streets', {
     direction: 'horizontal',
     slidesPerView: 6,
@@ -22,25 +22,25 @@ const diagnosticSlider = new Swiper('.diagnostic_slider', {
     direction: 'horizontal',
     slidesPerView: 5,
     pagination: {
-      el: '.pag2',
-      type: 'fraction',
+        el: '.pag2',
+        type: 'fraction',
     },
-  
+
     navigation: {
-      nextEl: '.next2',
-      prevEl: '.prev2',
+        nextEl: '.next2',
+        prevEl: '.prev2',
     },
 });
 
 //tab streets
 let streets = document.querySelectorAll('.street_wrapper');
 let tab = document.querySelectorAll('.tab__info');
-for(let i = 0; i < streets.length; i++){
-    streets[i].addEventListener('click', function(){
-        for(let j = 0; j < streets.length; j++){
+for (let i = 0; i < streets.length; i++) {
+    streets[i].addEventListener('click', function () {
+        for (let j = 0; j < streets.length; j++) {
             streets[j].classList.remove('street-active');
         }
-        for(let k = 0; k < tab.length; k++){
+        for (let k = 0; k < tab.length; k++) {
             tab[k].classList.remove('tab-active');
         }
         streets[i].classList.add('street-active');
@@ -55,9 +55,9 @@ let hoverOff = document.querySelectorAll('.hover_off');
 let hover = document.querySelectorAll('.hover');
 let menu = document.querySelectorAll('.diagnostic__info');
 let title = document.querySelectorAll('.det__wrapper__title');
-for(let i = 0; i < details.length; i++){
-    detWrapper[i].addEventListener('click', function(){
-        for(let j = 0; j < details.length; j++){
+for (let i = 0; i < details.length; i++) {
+    detWrapper[i].addEventListener('click', function () {
+        for (let j = 0; j < details.length; j++) {
             details[j].classList.remove('det-active');
             hoverOff[j].classList.remove('hover-off-active');
             hover[j].classList.remove('hover-active');
@@ -76,9 +76,9 @@ for(let i = 0; i < details.length; i++){
 let content = document.querySelectorAll('.tab_diagnostic');
 let arrDiagnostic = document.querySelectorAll('.arrow_diagnostic');
 let menuItem = document.querySelectorAll('.diagnostic__info__box__menu__item');
-for(let i = 0; i < menuItem.length; i++){
-    menuItem[i].addEventListener('click', function(){
-        for(let j = 0; j < menuItem.length; j++){
+for (let i = 0; i < menuItem.length; i++) {
+    menuItem[i].addEventListener('click', function () {
+        for (let j = 0; j < menuItem.length; j++) {
             menuItem[j].classList.remove('diagnostic-item-active');
             content[j].classList.remove('diagnostic-show');
             arrDiagnostic[j].classList.remove('arrow-active-diagnostic');
@@ -95,13 +95,13 @@ const newsSlider1 = new Swiper('.news_carousel1', {
     slidesPerView: 3,
     spaceBetween: 19,
     pagination: {
-      el: '.pag3',
-      type: 'fraction',
+        el: '.pag3',
+        type: 'fraction',
     },
-  
+
     navigation: {
-      nextEl: '.next3',
-      prevEl: '.prev3',
+        nextEl: '.next3',
+        prevEl: '.prev3',
     },
 });
 const newsSlider2 = new Swiper('.news_carousel2', {
@@ -109,22 +109,22 @@ const newsSlider2 = new Swiper('.news_carousel2', {
     slidesPerView: 3,
     spaceBetween: 19,
     pagination: {
-      el: '.pag3',
-      type: 'fraction',
+        el: '.pag3',
+        type: 'fraction',
     },
-  
+
     navigation: {
-      nextEl: '.next3',
-      prevEl: '.prev3',
+        nextEl: '.next3',
+        prevEl: '.prev3',
     },
 });
 
 //tab news
 let newsTab = document.querySelectorAll('.news__wrapper__box__tabs__item');
 let newsSlider = document.querySelectorAll('.news_carousel');
- for(let i = 0; i < newsTab.length; i++){
-    newsTab[i].addEventListener("click", function(){
-        for(let j = 0; j < newsTab.length; j++){
+for (let i = 0; i < newsTab.length; i++) {
+    newsTab[i].addEventListener("click", function () {
+        for (let j = 0; j < newsTab.length; j++) {
             newsTab[j].classList.remove('tab-news-active');
             newsSlider[j].classList.remove('news-active');
         }
@@ -136,9 +136,9 @@ let newsSlider = document.querySelectorAll('.news_carousel');
 //language change
 let lang = document.querySelectorAll('.nav__wrapper__box__lang');
 
-for(let i = 0; i < lang.length; i++){
-    lang[i].addEventListener("click", function(){
-        for(let j = 0; j < lang.length; j++){
+for (let i = 0; i < lang.length; i++) {
+    lang[i].addEventListener("click", function () {
+        for (let j = 0; j < lang.length; j++) {
             lang[j].classList.remove('lang-active');
         }
         lang[i].classList.add('lang-active');
@@ -150,13 +150,13 @@ const contactSliders = new Swiper('.contact_slider', {
     direction: 'horizontal',
     slidesPerView: 1,
     pagination: {
-      el: '.pag4',
-      type: 'fraction',
+        el: '.pag4',
+        type: 'fraction',
     },
-  
+
     navigation: {
-      nextEl: '.next4',
-      prevEl: '.prev4',
+        nextEl: '.next4',
+        prevEl: '.prev4',
     },
 });
 
@@ -166,14 +166,70 @@ var sliderThumbnail = new Swiper('.slider-thumbnail', {
     freeMode: true,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
-  });
-  
-  var slider = new Swiper('.slider', {
+});
+
+var slider = new Swiper('.slider', {
     navigation: {
-      nextEl: '.next5',
-      prevEl: '.prev5',
+        nextEl: '.next5',
+        prevEl: '.prev5',
     },
     thumbs: {
-      swiper: sliderThumbnail
+        swiper: sliderThumbnail
     }
-  });
+});
+
+//infodoc cost menu
+
+let costItem = document.querySelectorAll('.cost__wrapper__box__menu__item');
+let costContent = document.querySelectorAll('.cost__wrapper__box__services');
+for(let i = 0; i < costItem.length; i++){
+    costItem[i].addEventListener('click', function(){
+        for(let j = 0; j < costItem.length; j++){
+            costItem[j].classList.remove('cost-item-active');
+            costContent[j].classList.remove('cost-services-show');
+        }
+        costItem[i].classList.add('cost-item-active');
+        costContent[i].classList.add('cost-services-show');
+        
+    })
+}
+
+//cost carousel in a file infodoc
+
+const costSliderMonth = new Swiper('.cost-carousel-months', {
+    direction: 'horizontal',
+    slidesPerView: 1,
+    navigation: {
+        nextEl: '.next6',
+        prevEl: '.prev6',
+    },
+});
+
+const costSliderDay = new Swiper('.cost-carousel-days', {
+    direction: 'horizontal',
+    slidesPerView: 7,
+    navigation: {
+        nextEl: '.next7',
+        prevEl: '.prev7',
+    },
+});
+
+//hour select
+let hour = document.querySelectorAll('.cost_hours_free');
+let day = document.querySelectorAll('.slide_day_active');
+for(let i = 0; i < day.length; i++){
+    day[i].addEventListener('click', function(){
+        for(let j = 0; j < day.length; j++){
+            day[j].classList.remove('slide-day-show');
+        }
+        day[i].classList.add('slide-day-show');
+    })
+}
+for(let i = 0; i < hour.length; i++){
+    hour[i].addEventListener('click', function(){
+        for(let j = 0; j < hour.length; j++){
+            hour[j].classList.remove('cost-hour-active');
+        }
+        hour[i].classList.add('cost-hour-active');
+    })
+}

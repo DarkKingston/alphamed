@@ -104,3 +104,250 @@
         }
     }
 }
+
+.cost{
+    padding-top: 34px;
+    padding-bottom: 59px;
+}
+
+.cost__wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__box{
+        position: relative;
+        &:first-child{
+            margin-right: 23px;
+            max-width: 587px;
+            width: 100%;
+        }
+        &:last-child{
+            background: #FFFFFF;
+            border: 1px solid #FFFFFF;
+            box-shadow: 0px 0px 20px rgba(12, 76, 145, 0.1);
+            border-radius: 3px;
+            max-width: 590px;
+            width: 100%;
+            padding-top: 40px;
+            padding-bottom: 50px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        &__menu{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 30px;
+            
+            &__item{
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                height: 30px;
+                padding-right: 50px;
+                cursor: pointer;
+            }
+            .cost-item-active{
+                color:$red;
+                border-bottom: 2px solid $red;
+            }
+        }
+        &__services{
+            display: none;
+            border-top: 1px solid #C0DEED;
+            padding-top: 30px;
+            &__menu{
+                display: block;
+                &__item{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    font-size: 13px;
+                    line-height: 35px;
+                    span{
+                        margin-left: 30px;
+                    }
+                }
+            }
+            &__images{
+                img{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        &__accept{
+            font-size: 13px;
+            line-height: 20px;
+            margin-left: 19px;
+        }
+        &__street{
+            margin-top: 4px;
+            width: 100%;
+            padding: 14px 32px 13px 20px;
+            background: #F0F9FF;
+            border: 1px solid #F0F9FF;
+            border-radius: 3px;
+            font-weight: 600;
+            line-height: 21px;
+            color: $red;
+        }
+        &__hours{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            &__box{
+                position: relative;
+                &:last-child{
+                    max-width: 250px;
+                    width: 100%;
+                }
+                &__work{
+                    font-size: 13px;
+                    line-height: 20px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    span{
+                        margin-right: 7px;
+                    }
+                }
+                &__days{
+                    &:first-child{
+                        margin-top: 4px;
+                    }
+                    font-weight: 600;
+                    font-size: 13px;
+                    line-height: 21px;
+                    color: #000000;
+                }
+                .cost__arrow__right{
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+}
+
+.days_red{
+    color: $red;
+}
+
+.cost-services-show{
+    display: block;
+}
+
+.cost-carousel-months{
+    margin-top: 60px;
+    .swiper-button-next, .swiper-button-prev{
+        border: 1px solid #0C4C91;
+        border-radius: 3px;
+        top: 25px;
+        width: 30px !important;
+        height: 30px !important;
+    }
+    .swiper-button-next{
+        right: 0;
+    }
+    .swiper-button-prev{
+        left: 0;
+    }
+}
+
+.slide_month{
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    height: 33px;
+    color: #000000;
+}
+
+.cost-carousel-days{
+    margin-top: 40px;
+    .swiper-button-next, .swiper-button-prev{
+        background: none;
+        top: 40px;
+        width: 5px !important;
+        height: 5px !important;
+    }
+    .swiper-button-next{
+        right: 0;
+    }
+    .swiper-button-prev{
+        left: 0;
+    }
+    .slide_day{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-weight: 600;
+        line-height:21px;
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        span{
+            font-size: 12px;
+            line-height: 18px;
+            margin-top: 4px;
+        }
+    }
+    .slide_day_active{
+        color: $blue;
+    }
+    .slide-day-show{
+        border-top: 1px solid #C0DEED;
+        border-right: 1px solid #C0DEED;
+        border-left: 1px solid #C0DEED;
+        border-bottom: 2px solid #ffffff;
+        border-radius: 6px 6px 0px 0px;
+        z-index: 2;
+    }
+}
+
+.cost__wrapper__box__days__hours{
+    border: 1px solid #C0DEED;
+    border-radius: 3px;
+    padding: 20px 10px 20px 10px;
+    margin-top: -1px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
+    &__item{
+        cursor: pointer;
+        max-width: 58px;
+        background: #F0F9FF;
+        border: 1px solid #C0DEED;
+        border-radius: 3px;
+        padding: 8px 10px;
+        color: #000000;
+    }
+    .cost_hours_free{
+        background: #0C4C91;
+        border: 1px solid #0C4C91;
+        color: #ffffff
+    }
+    .cost-hour-active{
+        background: $red;
+        border: 1px solid $red;
+    }
+}
+
+.cost__wrapper__box__timezone{
+    font-size: 12px;
+    line-height: 18px;
+    margin-left: 19px;
+    margin-top: 6px;
+}
+
+.cost__wrapper__box__btn{
+    padding: 17px 0;
+    width: 100%;
+    margin-top: 30px;
+}

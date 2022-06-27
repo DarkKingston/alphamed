@@ -2,124 +2,304 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
 </head>
 
 <body>
 
-  <div class="wrapper">
-    <header class="header">
+    <div class="wrapper">
+        <header class="header">
 
-        <nav class="nav__wrapper">
-            <div class="container__header">
-                <div class="nav__wrapper__box">
-                    <div class="nav__wrapper__box__pretitle">многопрофильная клиника</div>
+            <nav class="nav__wrapper">
+                <div class="container__header">
+                    <div class="nav__wrapper__box">
+                        <div class="nav__wrapper__box__pretitle">многопрофильная клиника</div>
 
-                    <div class="nav__wrapper__box__menu">
-                        <div class="nav__wrapper__box__menu__item">
-                            <a class="nav__wrapper__box__menu__item__link" href="#">Филиалы </a>
-                        </div>
-                        <div class="nav__wrapper__box__menu__item">
-                            <a class="nav__wrapper__box__menu__item__link" href="#">Сотрудничество </a>
-                        </div>
-                        <div class="nav__wrapper__box__menu__item">
-                            <a class="nav__wrapper__box__menu__item__link" href="#">Контакты </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="nav__wrapper__box">
-                    <div class="nav__wrapper__box__lang">Ro</div>
-                    <div class="nav__wrapper__box__lang lang-active">Рус</div>
-                </div>
-            </div>
-        </nav>
-
-        <div class="header__wrapper">
-            <div class="container__header">
-                <div class="header__wrapper__box">
-                    <a class="header__wrapper__box__logo" href="#">
-                        <img class="logo" src="images/logo.png" alt="logo">
-                    </a>
-                </div>
-                <div class="header__wrapper__box">
-                    <div class="header__wrapper__box__btns">
-                        <div class="header__wrapper__box__btns__select white">Выбрать врача</div>
-                        <div class="header__wrapper__box__btns__search">
-                            <input class="search" type="text" placeholder="Поиск">
-                            <span><img class="search_icons" src="icons/Search.svg" alt="search"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="header__wrapper__box">
-                    <a class="header__wrapper__box__phone" href="tel:+37322908800">
-                        <span><img class="phone" src="icons/phone.svg" alt="phone"></span> + 373 (22) 90-88-00
-                    </a>
-                    <div class="header__wrapper__box__messenger">Мессенджеры <span><img class="arrow"
-                                src="icons/arrow-down.svg" alt=""></span></div>
-                </div>
-                <div class="header__wrapper__box">
-                    <a class="header__wrapper__box__call red" href="#">Заказать звонок</a>
-                </div>
-            </div>
-        </div>
-
-    </header>
-    
-    <main class="main">
-
-        <section class="crumbs">
-            <div class="container">
-                <div class="crumbs__wrapper">
-                    <a class="crumbs__wrapper__item" href="#">Главная</a>
-                    <div class="crumbs__wrapper__separator"><img src="icons/arrow-crumbs.svg" alt=""></div>
-                    <a class="crumbs__wrapper__item" href="#">Выбрать врача</a>
-                    <div class="crumbs__wrapper__separator"><img src="icons/arrow-crumbs.svg" alt=""></div>
-                    <a class="crumbs__wrapper__item crumbs-active" href="#">Сокира Наталья</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="infodoc">
-            <div class="container">
-                <div class="infodoc__wrapper">
-                    <div class="infodoc__wrapper__box">
-                        <div class="infodoc__wrapper__box__img">
-                            <img src="images/doc-detail/1.png" alt="">
-                        </div>
-                    </div>
-                    <div class="infodoc__wrapper__box">
-                        <div class="infodoc__wrapper__box__item">
-                            <div class="infodoc__wrapper__box__item__content"><span><img src="icons/family.svg" alt=""></span>Ведет прием взрослых</div>
-                            <a class="infodoc__wrapper__box__item__content" href="#">Гинекологи<span><img src="images/specialist/ico/col1-1.svg" alt=""></span></a>
-                        </div>
-                        <div class="infodoc__wrapper__box__item">
-                            <div class="infodoc__wrapper__box__item__name">Сокирка Наталья</div>
-                            <div class="infodoc__wrapper__box__item__info">
-                                <div class="infodoc__wrapper__box__item__info__speciality">
-                                    Акушер-гинеколог, специалист в кольпоскопии, доктор медицины
-                                </div>
-                                <div class="infodoc__wrapper__box__item__info__share">
-                                   Поделиться <span><img src="icons/share.svg" alt=""></span>
-                                </div>
+                        <div class="nav__wrapper__box__menu">
+                            <div class="nav__wrapper__box__menu__item">
+                                <a class="nav__wrapper__box__menu__item__link" href="#">Филиалы </a>
                             </div>
-                        </div>
-                        <div class="infodoc__wrapper__box__item">
-                            <div class="infodoc__wrapper__box__item__about">
-                                <div class="infodoc__wrapper__box__item__about__experience">Стаж 27 лет <span></span> Высшая категория <span></span> Кандидат наук    </div>
-                                <div class="infodoc__wrapper__box__item__about__btn red">Записаться на прием</div>
+                            <div class="nav__wrapper__box__menu__item">
+                                <a class="nav__wrapper__box__menu__item__link" href="#">Сотрудничество </a>
+                            </div>
+                            <div class="nav__wrapper__box__menu__item">
+                                <a class="nav__wrapper__box__menu__item__link" href="#">Контакты </a>
                             </div>
                         </div>
                     </div>
+                    <div class="nav__wrapper__box">
+                        <div class="nav__wrapper__box__lang">Ro</div>
+                        <div class="nav__wrapper__box__lang lang-active">Рус</div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="header__wrapper">
+                <div class="container__header">
+                    <div class="header__wrapper__box">
+                        <a class="header__wrapper__box__logo" href="#">
+                            <img class="logo" src="images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="header__wrapper__box">
+                        <div class="header__wrapper__box__btns">
+                            <div class="header__wrapper__box__btns__select white">Выбрать врача</div>
+                            <div class="header__wrapper__box__btns__search">
+                                <input class="search" type="text" placeholder="Поиск">
+                                <span><img class="search_icons" src="icons/Search.svg" alt="search"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__wrapper__box">
+                        <a class="header__wrapper__box__phone" href="tel:+37322908800">
+                            <span><img class="phone" src="icons/phone.svg" alt="phone"></span> + 373 (22) 90-88-00
+                        </a>
+                        <div class="header__wrapper__box__messenger">Мессенджеры <span><img class="arrow"
+                                    src="icons/arrow-down.svg" alt=""></span></div>
+                    </div>
+                    <div class="header__wrapper__box">
+                        <a class="header__wrapper__box__call red" href="#">Заказать звонок</a>
+                    </div>
                 </div>
             </div>
-        </section>
+
+        </header>
+
+        <main class="main">
+
+            <section class="crumbs">
+                <div class="container">
+                    <div class="crumbs__wrapper">
+                        <a class="crumbs__wrapper__item" href="#">Главная</a>
+                        <div class="crumbs__wrapper__separator"><img src="icons/arrow-crumbs.svg" alt=""></div>
+                        <a class="crumbs__wrapper__item" href="#">Выбрать врача</a>
+                        <div class="crumbs__wrapper__separator"><img src="icons/arrow-crumbs.svg" alt=""></div>
+                        <a class="crumbs__wrapper__item crumbs-active" href="#">Сокира Наталья</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="infodoc">
+                <div class="container">
+                    <div class="infodoc__wrapper">
+                        <div class="infodoc__wrapper__box">
+                            <div class="infodoc__wrapper__box__img">
+                                <img src="images/doc-detail/1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="infodoc__wrapper__box">
+                            <div class="infodoc__wrapper__box__item">
+                                <div class="infodoc__wrapper__box__item__content"><span><img src="icons/family.svg"
+                                            alt=""></span>Ведет прием взрослых</div>
+                                <a class="infodoc__wrapper__box__item__content" href="#">Гинекологи<span><img
+                                            src="images/specialist/ico/col1-1.svg" alt=""></span></a>
+                            </div>
+                            <div class="infodoc__wrapper__box__item">
+                                <div class="infodoc__wrapper__box__item__name">Сокирка Наталья</div>
+                                <div class="infodoc__wrapper__box__item__info">
+                                    <div class="infodoc__wrapper__box__item__info__speciality">
+                                        Акушер-гинеколог, специалист в кольпоскопии, доктор медицины
+                                    </div>
+                                    <div class="infodoc__wrapper__box__item__info__share">
+                                        Поделиться <span><img src="icons/share.svg" alt=""></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="infodoc__wrapper__box__item">
+                                <div class="infodoc__wrapper__box__item__about">
+                                    <div class="infodoc__wrapper__box__item__about__experience">Стаж 27 лет
+                                        <span></span> Высшая категория <span></span> Кандидат наук </div>
+                                    <div class="infodoc__wrapper__box__item__about__btn red">Записаться на прием</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cost">
+                <div class="container">
+                    <div class="cost__wrapper">
+                        <div class="cost__wrapper__box">
+                            <div class="cost__wrapper__box__menu">
+                                <div class="cost__wrapper__box__menu__item">О враче</div>
+                                <div class="cost__wrapper__box__menu__item cost-item-active">Услуги и цены</div>
+                                <div class="cost__wrapper__box__menu__item">Публикации</div>
+                            </div>
+                            <div class="cost__wrapper__box__services">
+                                <div class="cost__wrapper__box__services__about">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci sed non quibusdam
+                                    eius laudantium deserunt quasi, suscipit explicabo eum ullam aspernatur doloribus
+                                    qui consectetur iste veritatis rerum cum. Architecto, deleniti.
+                                    Optio, culpa! Ex omnis aspernatur beatae vitae eaque, facere odit id quas magnam
+                                    ducimus libero? Officia quo necessitatibus, laudantium laborum non obcaecati
+                                    voluptatibus aut vel, doloribus labore voluptate fugiat minima?
+                                    Iste, reprehenderit totam, maiores sequi fugiat, est saepe delectus adipisci quasi
+                                    dolore tempora sapiente corrupti tempore at dignissimos molestias esse quis fugit.
+                                    Fuga asperiores corporis sapiente repellat labore voluptas rerum.
+                                    Corporis illo perferendis, laborum tempore quam at exercitationem molestiae ipsam
+                                    sint iste vero blanditiis, autem rerum cum vel laboriosam quae explicabo,
+                                    voluptatibus eius? Mollitia sit a dolorum, aut architecto labore.
+                                    Quasi, sequi? Quis necessitatibus totam earum porro maiores eaque itaque
+                                    perspiciatis non culpa unde labore temporibus, accusantium est sequi deleniti animi
+                                    natus? Enim natus dolor facilis impedit perferendis, iure iste?
+                                    Accusamus saepe omnis debitis similique? Vitae quas illo incidunt voluptates optio
+                                    ullam, voluptatibus consequatur aspernatur omnis dolor repellat pariatur nesciunt,
+                                    corporis cumque delectus quo ea fuga quae error porro ratione!
+                                    Amet ad adipisci incidunt provident reprehenderit distinctio, maiores ullam quo!
+                                    Tenetur atque aliquam assumenda aut minima porro ipsa fugit harum sequi illo nemo
+                                    autem, nam magni, tempore, quo saepe itaque.
+                                </div>
+                            </div>
+                            <div class="cost__wrapper__box__services cost-services-show">
+                                <ul class="cost__wrapper__box__services__menu">
+                                    <li class="cost__wrapper__box__services__menu__item">Консультация врача по
+                                        гинекологической эндокринологии
+                                        <span>600 mdl</span></li>
+                                    <li class="cost__wrapper__box__services__menu__item">Консультация врача по
+                                        медикаментозному аборту
+                                        <span>1000 mdl</span></li>
+                                    <li class="cost__wrapper__box__services__menu__item">Кольпоскопия с фото- /
+                                        видеорегистрацией
+                                        <span>500 mdl</span></li>
+                                    <li class="cost__wrapper__box__services__menu__item">Лечение поражений шейки матки
+                                        <span>2500 mdl</span></li>
+                                    <li class="cost__wrapper__box__services__menu__item">Биопсия шейки матки (1
+                                        процедура)
+                                        <span>200 mdl</span></li>
+                                    <li class="cost__wrapper__box__services__menu__item">Биопсия эндометрия Pipelle (1
+                                        процедура)
+                                        <span>500 mdl</span></li>
+                                    <li class="cost__wrapper__box__services__menu__item">Удаление полипа канала шейки
+                                        матки<span>1000 mdl</span></li>
+                                    <li class="cost__wrapper__box__services__menu__item">Удаление генитальных кондилом
+                                        <span>400 mdl</span></li>
+                                    <li class="cost__wrapper__box__services__menu__item">Установление внутриматочной
+                                        спирали (без стоимости спирали)
+                                        <span>500 mdl</span></li>
+                                    <li class="cost__wrapper__box__services__menu__item">Удаление внутриматочной спирали
+                                        <span>600 mdl</span></li>
+                                    <li class="cost__wrapper__box__services__menu__item">Забор биологического материала
+                                        <span>500 mdl</span></li>
+                                </ul>
+                            </div>
+                            <div class="cost__wrapper__box__services">
+                                <div class="cost__wrapper__box__services__images">
+                                    <img src="images/disease/slider1.png" alt="">
+                                    <img src="images/disease/slider2.png" alt="">
+                                    <img src="images/disease/slider3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cost__wrapper__box">
+                            <div class="cost__wrapper__box__accept">
+                                Врач принимает в
+                            </div>
+                            <div class="cost__wrapper__box__street">
+                                Кишинев, Cектор Рышкановка, ул. Константин Вырнав, 8
+                            </div>
+                            <div class="cost__wrapper__box__hours">
+                                <div class="cost__wrapper__box__hours__box">
+                                    <div class="cost__wrapper__box__hours__box__work">
+                                        <span><img src="icons/attention.svg" alt=""></span>Часы приема:
+                                    </div>
+                                    <div class="cost__wrapper__box__hours__box__days">
+                                        Вторник, Четверг: 08:00 - 16:00
+                                    </div>
+                                    <div class="cost__wrapper__box__hours__box__days"> Среда, Пятница: 12:00 - 18:00
+                                    </div>
+                                </div>
+                                <div class="cost__wrapper__box__hours__box">
+                                    <div class="cost__wrapper__box__hours__box__work">
+                                        Ближайшее свободное время:
+                                    </div>
+                                    <div class="cost__wrapper__box__hours__box__days days_red">
+                                        Вторник, 14 июня, 08:40
+                                    </div>
+                                    <div class="cost__wrapper__box__hours__box__days days_red"> Записаться на это время
+                                    </div>
+                                    <a class="cost__arrow__right" href="#">
+                                        <img src="icons/cost-arrow-right.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="cost__wrapper__box__months">
+                                <div class="swiper cost-carousel-months">
+                                    <div class="swiper-wrapper">
+                                      <div class="swiper-slide"><div class="slide_month">Январь 2022</div></div>
+                                      <div class="swiper-slide"><div class="slide_month">Февраль 2022</div></div>
+                                      <div class="swiper-slide"><div class="slide_month">Март 2022</div></div>
+                                      <div class="swiper-slide"><div class="slide_month">Апрель 2022</div></div>
+                                      <div class="swiper-slide"><div class="slide_month">Май 2022</div></div>
+                                      <div class="swiper-slide"><div class="slide_month">Июнь 2022</div></div>
+                                      <div class="swiper-slide"><div class="slide_month">Июль 2022</div></div>
+                                      <div class="swiper-slide"><div class="slide_month">Август 2022</div></div>
+                                      <div class="swiper-slide"><div class="slide_month">Сентябрь 2022</div></div>
+                                      <div class="swiper-slide"><div class="slide_month">Октябрь 2022</div></div>
+                                      <div class="swiper-slide"><div class="slide_month">Ноябрь 2022</div></div>
+                                      <div class="swiper-slide"><div class="slide_month">Декабрь 2022</div></div>
+
+                                    </div>
+                                  
+                                    <div class="swiper-button-prev prev6"></div>
+                                    <div class="swiper-button-next next6"></div>
+                                  </div>
+                            </div>
+                            <div class="cost__wrapper__box__days">
+                                <div class="swiper cost-carousel-days">
+                                    <div class="swiper-wrapper">
+                                      <div class="swiper-slide"><div class="slide_day">пн <span>13 июн.</span></div></div>
+                                      <div class="swiper-slide"><div class="slide_day slide_day_active slide-day-show">вт <span>14 июн.</span></div></div>
+                                      <div class="swiper-slide"><div class="slide_day slide_day_active">ср <span>15 июн.</span></div></div>
+                                      <div class="swiper-slide"><div class="slide_day slide_day_active">чт <span>16 июн.</span></div></div>
+                                      <div class="swiper-slide"><div class="slide_day">пт <span>17 июн.</span></div></div>
+                                      <div class="swiper-slide"><div class="slide_day">сб <span>18 июн.</span></div></div>
+                                      <div class="swiper-slide"><div class="slide_day">вс <span>19 июн.</span></div></div>
+                                      <div class="swiper-slide"><div class="slide_day">пн <span>20 июн.</span></div></div>
+                                      <div class="swiper-slide"><div class="slide_day">вт <span>21 июн.</span></div></div>
+                                      <div class="swiper-slide"><div class="slide_day">ср <span>22 июн.</span></div></div>
+                                      <div class="swiper-slide"><div class="slide_day">чт <span>23 июн.</span></div></div>
+                                      <div class="swiper-slide"><div class="slide_day">пт <span>24 июн.</span></div></div>
+
+                                    </div>
+                                  
+                                    <div class="swiper-button-prev prev7"></div>
+                                    <div class="swiper-button-next next7"></div>
+                                </div>
+                                <div class="cost__wrapper__box__days__hours">
+                                    <div class="cost__wrapper__box__days__hours__item">08:00</div>
+                                    <div class="cost__wrapper__box__days__hours__item cost_hours_free cost-hour-active">08:40</div>
+                                    <div class="cost__wrapper__box__days__hours__item cost_hours_free">09:20</div>
+                                    <div class="cost__wrapper__box__days__hours__item">10:00</div>
+                                    <div class="cost__wrapper__box__days__hours__item">10:40</div>
+                                    <div class="cost__wrapper__box__days__hours__item">11:20</div>
+                                    <div class="cost__wrapper__box__days__hours__item">12:00</div>
+                                    <div class="cost__wrapper__box__days__hours__item">12:40 </div>
+                                    <div class="cost__wrapper__box__days__hours__item cost_hours_free">13:20</div>
+                                    <div class="cost__wrapper__box__days__hours__item cost_hours_free">14:00</div>
+                                    <div class="cost__wrapper__box__days__hours__item">14:40</div>
+                                    <div class="cost__wrapper__box__days__hours__item">15:20</div>
+                                    <div class="cost__wrapper__box__days__hours__item">16:00</div>
+                                </div>
+                            </div>
+                            <div class="cost__wrapper__box__timezone">
+                                Часовой пояс: UTC+3
+                            </div>
+                            <div class="cost__wrapper__box__btn red">Записаться на прием</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </div>
+    </section>
 
 
     </main>
-    
+
     <footer class="footer">
 
         <div class="wrapper first_footer">
@@ -195,11 +375,12 @@
         </div>
 
     </footer>
-  </div>
+    </div>
 
 
 
-  <script src="js/main.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>
