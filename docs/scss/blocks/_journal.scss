@@ -1,0 +1,144 @@
+.article {
+    padding-top: 52px;
+    height: 231px;
+    background: #F0F9FF;
+    margin-top: 14px;
+}
+
+.slider__container {
+    max-width: 520px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.article__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    &__info {
+        &__data {
+            color: #000000;
+            line-height: 19px;
+        }
+
+        &__title {
+            @include h3;
+            font-size: 32px;
+            line-height: 44px;
+            margin-top: 11px;
+            max-width: 525px;
+            width: 100%;
+        }
+    }
+}
+
+.article__carousel {
+    .swiper-slide {
+        img {
+            border-radius: 3px;
+            width: 100%;
+        }
+    }
+}
+
+.article-slider {
+    margin-top: 24px;
+
+    &.slider {
+        height: 80vh;
+    }
+
+    &.slider-thumbnail {
+        height: 20vh;
+
+        .swiper-wrapper {
+
+            .swiper-slide {
+                width: 25%;
+                height: 100%;
+                opacity: .5;
+                overflow: hidden;
+                border-radius: 3px;
+
+                &.swiper-slide-thumb-active {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.article__btns {
+    position: absolute;
+    width: 100px;
+    right: 0;
+    top: 558px;
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 30px !important;
+        height: 30px !important;
+        border: 1px solid #0C4C91;
+        border-radius: 3px;
+    }
+}
+
+.recomendation{
+}
+
+.recomendation__wrapper{
+    position: relative;
+    &__info{
+        max-width: 590px;
+        width: 100%;
+        color: #000000;
+        &__txt{
+            line-height: 24px;
+            margin-top: 10px;
+            &:first-child{
+                margin-top: 40px;
+            }
+        }
+        &__title{
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 25px;
+            margin-top: 30px;
+        }
+        &__price{
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 25px;
+            color: $red;
+        }
+        &__line{
+            margin-top: 45px;
+            height: 1px;
+            background: #C0DEED;
+            width: 100%;
+        }
+        &__box{
+            margin-top: 12px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 93px;
+            &__btn{
+                padding: 17px 0;
+                width: 284px;
+            }
+            &__share{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                font-weight: 600;
+                line-height: 21px;
+                span{
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+}

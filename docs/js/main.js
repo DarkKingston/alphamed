@@ -159,3 +159,21 @@ const contactSliders = new Swiper('.contact_slider', {
       prevEl: '.prev4',
     },
 });
+
+var sliderThumbnail = new Swiper('.slider-thumbnail', {
+    slidesPerView: 2,
+    spaceBetween: 20,
+    freeMode: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+  });
+  
+  var slider = new Swiper('.slider', {
+    navigation: {
+      nextEl: '.next5',
+      prevEl: '.prev5',
+    },
+    thumbs: {
+      swiper: sliderThumbnail
+    }
+  });
