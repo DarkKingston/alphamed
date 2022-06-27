@@ -45,12 +45,7 @@
 .article-slider {
     margin-top: 24px;
 
-    &.slider {
-        height: 80vh;
-    }
-
     &.slider-thumbnail {
-        height: 20vh;
 
         .swiper-wrapper {
 
@@ -73,7 +68,7 @@
     position: absolute;
     width: 100px;
     right: 0;
-    top: 558px;
+    top: 485px;
 
     .swiper-button-next,
     .swiper-button-prev {
@@ -84,8 +79,6 @@
     }
 }
 
-.recomendation{
-}
 
 .recomendation__wrapper{
     position: relative;
