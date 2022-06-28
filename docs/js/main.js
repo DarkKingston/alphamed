@@ -216,6 +216,7 @@ const costSliderDay = new Swiper('.cost-carousel-days', {
 
 //hour select
 let hour = document.querySelectorAll('.cost_hours_free');
+let hourModal = document.querySelectorAll('.modal_hours_free');
 let day = document.querySelectorAll('.slide_day_active');
 for(let i = 0; i < day.length; i++){
     day[i].addEventListener('click', function(){
@@ -223,13 +224,61 @@ for(let i = 0; i < day.length; i++){
             day[j].classList.remove('slide-day-show');
         }
         day[i].classList.add('slide-day-show');
-    })
+    });
 }
 for(let i = 0; i < hour.length; i++){
     hour[i].addEventListener('click', function(){
         for(let j = 0; j < hour.length; j++){
             hour[j].classList.remove('cost-hour-active');
+            hourModal[j].classList.remove('modal-hour-active');
         }
+        hourModal[i].classList.add('modal-hour-active');
         hour[i].classList.add('cost-hour-active');
+    });
+    
+}
+for(let i = 0; i < hourModal.length; i++){
+    hourModal[i].addEventListener('click', function(){
+        for(let j = 0; j < hourModal.length; j++){
+            hourModal[j].classList.remove('modal-hour-active');
+        }
+        hourModal[i].classList.add('modal-hour-active');
+        
+    });
+    
+}
+
+//modal 
+const modalSliderMonth = new Swiper('.modal-carousel-months', {
+    direction: 'horizontal',
+    slidesPerView: 1,
+    navigation: {
+        nextEl: '.next8',
+        prevEl: '.prev8',
+    },
+});
+
+const modalSliderDay = new Swiper('.modal-carousel-days', {
+    direction: 'horizontal',
+    slidesPerView: 7,
+    navigation: {
+        nextEl: '.next9',
+        prevEl: '.prev9',
+    },
+});
+
+//modal show
+
+let modalShow = document.querySelectorAll('.modal_show');
+let modal = document.querySelector('.modal');
+let modalClose = document.querySelector('.modal__close');
+for(let i = 0; i < modalShow.length; i++){
+    modalShow[i].addEventListener('click', function(){
+        modal.classList.add('modal-show');
+    }) 
+    modalClose.addEventListener('click', function(){
+        modal.classList.remove('modal-show');
     })
 }
+
+$('.modalShow').scrollTo('.header');
