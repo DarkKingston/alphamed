@@ -17,13 +17,20 @@ const swiperStreet = new Swiper('.streets', {
     direction: 'horizontal',
     slidesPerView: 6,
     breakpoints: {
-        320: {
-          slidesPerView: 2
+        280:{
+            slidesPerView: 1,
+            autoplay: {
+                delay: 5000,
+              }
+            
         },
-        480: {
-          slidesPerView: 3
+        340: {
+            slidesPerView: 2
         },
-        640: {
+        480:{
+            slidesPerView: 3
+        },
+        780: {
           slidesPerView: 5
         },
         940: {

@@ -194,3 +194,128 @@
         line-height: 15px;
     }
 }
+
+//responsive section clinics
+
+@media(max-width: 940px){
+    .tab__info__wrapper__box__content__item__title{
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .tab__info__wrapper__box__content__item__phone{
+        justify-content: flex-end;
+    }
+    .phone_number,.tab__info__wrapper__box__content__item__mail{
+        font-size: 15px;
+    }
+}
+@media(max-width: 900px){
+    .tab__info__wrapper__box__content{
+        flex-wrap: wrap;
+
+    }
+    .tab__info__wrapper__box__content:nth-child(2){
+        max-width: 450px;
+        width: 100%;
+       
+    }
+    .tab__info__wrapper__box>.tab__info__wrapper__box__content:nth-child(2)>.tab__info__wrapper__box__content__item:last-child{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        .tab__info__wrapper__box__content__item__mail{
+            margin-top: 0;
+            margin-left: 20px;
+        }
+    }
+    .phone_number,.tab__info__wrapper__box__content__item__mail{
+        font-size: 18px;
+    }
+    .street_wrapper {
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 800px){
+    .tab__info__wrapper__box__content__item__title {
+        font-size: 19px;
+        line-height: 20px;
+    }
+}
+
+@media(max-width: 715px){
+    .tab__info__wrapper{
+        display: flex;
+        flex-direction: column;
+        .tab__info__wrapper__box__img {
+           margin-bottom: 20px;
+            img{
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+           }
+        }
+    }
+}
+
+@media(max-width: 525px){
+    .tab__info__wrapper__box__content:first-child{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: unset;
+        padding-bottom: 15px;
+    }
+    .tab__info__wrapper__box > .tab__info__wrapper__box__content:nth-child(2) > .tab__info__wrapper__box__content__item:last-child{
+        justify-content: space-between;
+        width: 100%;
+    }
+    .clinics__wrapper__title {
+        font-size: 20px;
+        line-height: 25px;
+        max-width: 300px;
+        width: 100%;
+    }
+}
+
+@media(max-width: 470px){
+    .tab__info__wrapper__box__content:nth-child(2){
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .tab__info__wrapper__box__content__item:first-child{
+            margin-bottom: 10px;
+        }
+    }
+    .tab__info__wrapper__box > .tab__info__wrapper__box__content:nth-child(2) > .tab__info__wrapper__box__content__item:last-child{
+        flex-direction: column;
+
+    }
+    .tab__info__wrapper__box > .tab__info__wrapper__box__content:nth-child(2) > .tab__info__wrapper__box__content__item:last-child .tab__info__wrapper__box__content__item__mail{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    
+    .tab__info__wrapper__box__content{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .tab__info{
+        padding-left: 0;
+    }
+    .tab__info__wrapper__box__content{
+        justify-content: center;
+        margin: unset;
+    }
+    .tab__info__wrapper__box__content__btn{
+        max-width: 285px;
+        width: 100%;
+        display: block;
+        margin: 0 15px;
+        margin-top: 10px;
+    }
+    .tab__info__wrapper__box__img{
+        margin-right: 0;
+    }
+}
