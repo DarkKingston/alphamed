@@ -1,0 +1,56 @@
+@media(max-width: 1200px){
+    .doctors__wrapper__box{
+        max-width: 550px;
+    }
+    .doctors__wrapper{
+        justify-content: center;
+    }
+}
+
+@media(max-width: 900px){
+    .record__wrapper__title{
+        font-size: 28px;
+        line-height: 30px;
+    }
+    .record{
+        margin-top: 30px;
+    }
+    .record__wrapper__box{
+        top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .doctors{
+        margin-top: 160px;
+        padding-bottom: 40px;
+    }
+}
+
+@media(max-width: 590px){
+    .record__wrapper__title{
+        font-size: 25px;
+        line-height: 27px;
+    }
+    .doctors__wrapper__box__item{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .doctors__wrapper__box__item__link{
+        margin: 0 auto;
+    }
+    .doctors__wrapper__box__item__btn{
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .doctors__wrapper__box {
+        max-width: 340px;
+    }
+    .doctors__wrapper__box__item__content{
+        text-align: center;
+    }
+    .doctors__wrapper__box__item__content__experience{
+        margin-top: 10px;
+    }
+}
