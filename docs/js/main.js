@@ -51,6 +51,20 @@ const diagnosticSlider = new Swiper('.diagnostic_slider', {
         nextEl: '.next2',
         prevEl: '.prev2',
     },
+    breakpoints: {
+        280:{
+            slidesPerView: 2,
+        },
+        480:{
+            slidesPerView:3
+        },
+        780: {
+          slidesPerView: 4
+        },
+        940: {
+            slidesPerView: 6
+        }
+      }
 });
 
 //tab streets

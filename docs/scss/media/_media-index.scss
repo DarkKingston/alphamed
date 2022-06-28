@@ -334,7 +334,6 @@
         max-width: 300px;
     }
     .consulting__wrapper__box:nth-child(2){
-        // flex-wrap: wrap;
         flex-direction: column;
     }
     .consulting__wrapper__box__card {
@@ -359,7 +358,161 @@
         line-height: 28px;
     }
     .consulting__wrapper__box__item__sutitle{
-        // justify-content: start;
         text-align: left;
+    }
+}
+
+//responsive section diagnostic
+
+@media(max-width: 950px){
+    .diagnostic{
+        padding-top: 50px;
+    }
+    .diagnostic__wrapper__box__item__title{
+        font-size: 28px;
+        line-height: 30px;
+    }
+    .diagnostic__wrapper__box__item__subtitle{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .diagnostic__wrapper__box__item__descr{
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
+@media(max-width: 920px){
+    .diagnostic_slider{
+        margin-left: unset !important;
+    }
+    .det__wrapper{
+        align-items: center;
+        text-align: center;
+    }
+    .det__wrapper__title{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .diagnostic__info__box__descr{
+        p{
+            font-size: 13px;
+            line-height: 15px;
+        }
+    }
+    .diagnostic__info{
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 800px){
+    .diagnostic__info__box__menu{
+        margin-right: 0;
+    }
+    .diagnostic__info__box__btn{
+        max-width: 285px;
+        width: 100%;
+    }
+    .diagnostic__info__box__descr {
+        max-width: 685px;
+        width: 100%;
+        margin-right: 15px;
+    }
+    .diagnostic__info__box__descr p{
+        margin-top: 15px;
+    }
+    .diagnostic__info__box__menu{
+        width: 259px;
+    }
+}
+
+@media(max-width: 700px){
+    .diagnostic__wrapper__box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        &__item{
+            margin: 0 auto;
+            text-align: center;
+            width: 100%;
+            &__title{
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media(max-width: 630px){
+    .diagnostic__info__box__menu__item{
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .diagnostic__info{
+        padding: 0 15px;
+    }
+    .diagnostic__det__title{
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+@media(max-width: 600px){
+    
+    .diagnostic-info-show {
+        display: flex;
+        flex-direction: column;
+    }
+    .diagnostic__info__box__title{
+        margin-top: 0;
+    }
+    .diagnostic__info__box__btn{
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 570px){
+    .pag2{
+        bottom: 0px !important;
+    }
+    .slider_btns{
+        width: 130px;
+    }
+}
+
+@media(max-width: 515px){
+    .diagnostic__det__title{
+        max-width: 230px;
+        width: 100%;
+    }
+}
+
+@media(max-width: 400px){
+    .diagnostic__det__title{
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .diagnostic__det{
+        padding-top: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .diagnostic__info{
+        margin-right: 0;
+    }
+}
+
+@media(max-width: 380px){
+    .diagnostic__info__box__menu{
+        max-width: 260px;
+        width: 100%;
+    }
+    .slider_btns{
+        top: 100px;
+    }
+    .det__wrapper__title{
+        font-size: 12px;
+        line-height: 15px;
     }
 }
