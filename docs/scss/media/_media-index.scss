@@ -319,3 +319,47 @@
         margin-right: 0;
     }
 }
+
+//responsive section consulting
+
+@media(max-width: 840px){
+    .consulting__wrapper__box__item__title{
+        font-size: 28px;
+        max-width: 300px;
+        width: 100%;
+        line-height: 35px;
+        margin-bottom: 15px;
+    }
+    .consulting__wrapper__box__item{
+        max-width: 300px;
+    }
+    .consulting__wrapper__box:nth-child(2){
+        // flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .consulting__wrapper__box__card {
+        margin-right: 15px;
+        height: unset;
+    }
+}
+
+@media(max-width: 660px){
+    .consulting__wrapper__box:first-child{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media(max-width: 450px){
+    .consulting__wrapper__box__card,.consulting__wrapper__box__item{
+        margin-right: 0;
+    }
+    .consulting__wrapper__box__item__title{
+        font-size: 23px;
+        line-height: 28px;
+    }
+    .consulting__wrapper__box__item__sutitle{
+        // justify-content: start;
+        text-align: left;
+    }
+}
