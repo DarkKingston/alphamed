@@ -138,6 +138,17 @@ const newsSlider1 = new Swiper('.news_carousel1', {
         nextEl: '.next3',
         prevEl: '.prev3',
     },
+    breakpoints: {
+        280:{
+            slidesPerView: 1
+        },
+        590:{
+            slidesPerView:2
+        },
+        890: {
+            slidesPerView: 3
+        }
+      }
 });
 const newsSlider2 = new Swiper('.news_carousel2', {
     direction: 'horizontal',
