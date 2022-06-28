@@ -112,9 +112,11 @@ header{
             color: $red;
             height: 33px;
             width: 224px;
-            border-bottom: 1px solid $red;
             .phone{
                 margin-right: 5px;
+            }
+            span:last-child{
+                border-bottom: 1px solid $red;
             }
         }
 

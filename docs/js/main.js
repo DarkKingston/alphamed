@@ -280,3 +280,9 @@ for(let i = 0; i < modalShow.length; i++){
         modal.classList.remove('modal-show');
     })
 }
+
+//script toggle menu/navbar
+$(".menu-btn").click(function () {
+    $(".menu").toggleClass("active-menu");
+    $(".menu-btn i").toggleClass("active");
+});
