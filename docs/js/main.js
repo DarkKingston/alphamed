@@ -280,5 +280,3 @@ for(let i = 0; i < modalShow.length; i++){
         modal.classList.remove('modal-show');
     })
 }
-
-$('.modalShow').scrollTo('.header');

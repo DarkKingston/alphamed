@@ -5,6 +5,10 @@
     border: 1px solid #EDEDED;
     &__wrapper{
         display: flex;
+        
+    }.container{
+        max-width: unset;
+        width: 1230px;
     }
 }
 
@@ -15,10 +19,12 @@
         flex-direction: column;
     }
     &__box:last-child{
-        width: 916px;
+        max-width: 916px;
+        width: 100%;
         background: $blue;
         justify-content: start;
         padding-left: 125px;
+        // justify-content: space-between;
     }
     &__box{
         padding-top: 41px;
@@ -38,7 +44,14 @@
             font-size: 14px;
             color: #fff;
             line-height: 21px;
-            margin-right: 89px;
+            &:first-child{
+                max-width: 204px;
+                width: 100%;
+            }
+            &:nth-child(2){
+                max-width: 420px;
+                width: 100%;
+            }
             &__item{
                 margin-top: 5px;
                 &:first-child{
@@ -53,7 +66,8 @@
             display: flex;
             align-items: flex-end;
             flex-direction: column;
-            margin-left: 100px;
+            min-width: 166px;
+
             &__contact{
                 font-weight: 600;
                 font-size: 14px;
@@ -106,9 +120,10 @@
 
 .wrapper{
     &__descr{
-        width: 838px;
+        max-width: 838px;
+        width: 100%;
         font-weight: 400;
-        font-size: 13px;
+        font-size: 13px;    
         line-height: 20px;
     }
     &__copyright{
@@ -121,16 +136,22 @@
         display: flex;
         align-items: center;
         &__develop{
+            font-family: 'Montserrat';
+            font-style: normal;
             margin-right: 10px;
             font-weight: 600;
             font-size: 9px;
             line-height: 11px;
+            color: rgba(0, 0, 0, 0.6);
         }
         &__studio{
+            font-family: 'Montserrat';
+            font-style: normal;
             margin-right: 10px;
             font-weight: 400;
             font-size: 11px;
             line-height: 13px;
+            color: #060709;
         }
     }
 }
