@@ -12,13 +12,13 @@
     }
 }
 
-.wrapper{
-    &__box:first-child{
+.first_footer{
+    .wrapper__box:first-child{
         background: #fff;
         width: 286px;
         flex-direction: column;
     }
-    &__box:last-child{
+    .wrapper__box:last-child{
         max-width: 916px;
         width: 100%;
         background: $blue;
@@ -26,7 +26,7 @@
         padding-left: 125px;
         // justify-content: space-between;
     }
-    &__box{
+    .wrapper__box{
         padding-top: 41px;
         height: 245px;
         display: flex;
@@ -112,46 +112,48 @@
 .second_footer{
     padding-top: 10px;
     padding-bottom: 5px;
+    .wrapper{
+        &__descr{
+            max-width: 838px;
+            width: 100%;
+            font-weight: 400;
+            font-size: 13px;    
+            line-height: 20px;
+        }
+        &__copyright{
+            width: 267px;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
 }
 
 .third_footer{
     border-top: 1px solid #EDEDED;
-}
-
-.wrapper{
-    &__descr{
-        max-width: 838px;
-        width: 100%;
-        font-weight: 400;
-        font-size: 13px;    
-        line-height: 20px;
-    }
-    &__copyright{
-        width: 267px;
-        font-weight: 300;
-        font-size: 12px;
-        line-height: 18px;
-    }
-    &__author{
-        display: flex;
-        align-items: center;
-        &__develop{
-            font-family: 'Montserrat';
-            font-style: normal;
-            margin-right: 10px;
-            font-weight: 600;
-            font-size: 9px;
-            line-height: 11px;
-            color: rgba(0, 0, 0, 0.6);
-        }
-        &__studio{
-            font-family: 'Montserrat';
-            font-style: normal;
-            margin-right: 10px;
-            font-weight: 400;
-            font-size: 11px;
-            line-height: 13px;
-            color: #060709;
+        
+    .wrapper{
+        &__author{
+            display: flex;
+            align-items: center;
+            &__develop{
+                font-family: 'Montserrat';
+                font-style: normal;
+                margin-right: 10px;
+                font-weight: 600;
+                font-size: 9px;
+                line-height: 11px;
+                color: rgba(0, 0, 0, 0.6);
+            }
+            &__studio{
+                font-family: 'Montserrat';
+                font-style: normal;
+                margin-right: 10px;
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 13px;
+                color: #060709;
+            }
         }
     }
 }
