@@ -16,6 +16,20 @@ const swiper = new Swiper('.slider-bg', {
 const swiperStreet = new Swiper('.streets', {
     direction: 'horizontal',
     slidesPerView: 6,
+    breakpoints: {
+        320: {
+          slidesPerView: 2
+        },
+        480: {
+          slidesPerView: 3
+        },
+        640: {
+          slidesPerView: 5
+        },
+        940: {
+            slidesPerView: 6
+        }
+      }
 });
 
 const diagnosticSlider = new Swiper('.diagnostic_slider', {
