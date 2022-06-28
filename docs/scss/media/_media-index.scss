@@ -516,3 +516,102 @@
         line-height: 15px;
     }
 }
+
+//responsive section banners
+
+@media(max-width: 950px){
+    .bg-hand img{
+        object-fit: cover;
+    }
+}
+
+@media(max-width: 800px){
+    .banners__wrapper__box__title{
+        font-size: 19px;
+        line-height: 26px;
+        max-width: 250px;
+    }
+    .banners__wrapper__box__slogan{
+        font-size: 19px;
+        line-height: 26px;
+        max-width: 430px;
+    }
+
+    .banners__wrapper__box__descr,.banners__wrapper__box__info{
+        max-width: 370px;
+        line-height: 19px;
+        font-size: 14px;
+    }
+    .banners__wrapper__box:first-child{
+        height: 360px;
+        padding-top: 30px;
+    }
+}
+
+@media(max-width: 580px){
+    .banners__wrapper__box__btn{
+        margin-top: 25px;
+    }
+    .banners__wrapper__box:first-child{
+        height: 280px;
+    }
+    .banners__wrapper__box:last-child{
+        min-height: 320px;
+        padding-top: 40px;
+    }
+    .banners__wrapper__box__button{
+        margin-top: 20px;
+    }
+    .banners__wrapper__box__logo{
+        img{
+            width: 80px;
+        }
+    }
+    .banners__wrapper__box__title{
+        margin-top: 5px;
+    }
+}
+
+@media(max-width: 530px){
+    .banners__wrapper__box__title,.banners__wrapper__box__slogan{
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .banners__wrapper__box__slogan{
+        max-width: 360px;
+    }
+    .banners__wrapper__box__descr{
+        font-size: 12px;
+        line-height: 14px;
+        max-width: 230px;
+    }
+    .banners__wrapper__box__info{
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .banners__wrapper__box__btn{
+        height: 30px;
+        width: 170px;
+        font-size: 13px;
+    }
+    .banners__wrapper__box__button{
+        width: 230px;
+        font-size: 13px;
+        height: 40px;
+    }
+    .banners__wrapper__box:first-child {
+        height: 250px;
+        padding-top: 16px;
+        padding-left: 20px;
+        margin-top: 40px;
+    }
+    .banners__wrapper__box:last-child{
+        padding-top: 16px;
+        padding-left: 20px;
+        margin-top: 40px;
+        padding-bottom: 10px;
+        padding-right: 5px;
+        min-height: 270px;
+    }
+}
+
