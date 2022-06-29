@@ -1,0 +1,183 @@
+@media(max-width: 1200px){
+    .doc__wrapper{
+        gap: unset;
+        justify-content: space-between;
+        max-width: 1020px;
+        margin: 0 auto;
+    }
+    .doc__wrapper__box{
+        margin-bottom: 22px;
+        max-width: 500px;
+    }
+}
+
+@media(max-width: 1040px){
+    .doc__wrapper{
+        max-width: 575px;
+    }
+    .doc__wrapper__box{
+        max-width: 575px;
+    }
+}
+
+@media(max-width: 580px){
+    .fillial__wrapper__title{
+        font-size: 28px;
+        line-height: 30px;
+    }
+}
+
+@media(max-width: 460px){
+    .doc__wrapper__box__info__btns__btn,.doc__wrapper__box__info__btns__btn:last-child{
+        height: 30px;
+        font-size: 13px;
+    }
+    .doc__wrapper__box__info__experience{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .doc__wrapper__box__info__btns{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .doc__wrapper__box__info__btns__btn:first-child{
+        margin-right: 0;
+    }
+    .doc__wrapper__box__info__btns__btn{
+        margin-bottom: 10px;
+    }
+    .doc__wrapper__box__info__btns__btn:last-child{
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 415px){
+    .doc__wrapper__box__info {
+        margin-top: 120px;
+    }
+    .doc__wrapper__box__profil{
+        top: 65px;
+        left: 50%;
+        transform: translateX(-50%);
+        right: unset;
+    }
+}
+
+//responsive section contact in fillials
+
+@media(max-width: 1060px){
+    .contact__wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact__wrapper__box:last-child{
+        width: 100%;
+        iframe{
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            margin-top: 20px;
+        }
+    }
+    .contact{
+        padding-bottom: 40px;
+        padding-top: 30px;
+    }
+}
+
+@media(max-width: 700px){
+    .contact__wrapper__box__street{
+        font-size: 15px;
+        span{
+            font-size: 25px;
+        }
+    }
+    .contact__wrapper__box__schedule{
+        flex-direction: column;
+        &__info:last-child{
+            margin-top: 20px;
+        }
+    }
+    .fillial__wrapper__box{
+        padding: 18px 9px;
+    }
+    .fillial__wrapper fieldset{
+        margin-right: 0;
+    }
+}
+
+@media(max-width: 625px){
+    .contact__wrapper__box__sliders{
+        flex-direction: column;
+    }
+    .rotate{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    
+}
+
+//responsive modal in fillials
+
+@media(max-width: 590px){
+    .modal__wrap__btn{
+        max-width: 529px;
+        width: 100%;
+    }
+}
+
+@media(max-width: 455px){
+    .modal__accept, .modal__hours{
+        margin-left: 18px;
+        font-size: 13px;
+        line-height: 15px;
+    }   
+    .modal__wrapper__days__hours__item{
+        padding: 8px 6px;
+    }
+    .modal-carousel-days .slide_day{
+        font-size: 12px;
+        span{
+            font-size: 11px;
+        }
+    }
+}
+
+@media(max-width: 420px){
+    .modal__wrapper__days__hours__item{
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 350px){
+    .modal__box__img{
+        margin-right: 5px;
+    }
+    .modal__box{
+        padding: 0 10px;
+    }
+}
+
+@media(max-width: 390px){
+    .modal__wrapper__days__hours__item{
+        font-size: 13px;
+        padding: 8px 5px;
+    }
+    .modal__wrap__form__input__item:first-child{
+        flex-direction: column;
+        align-items: center;
+    }
+    .modal__box__info__name{
+        font-size: 15px;
+    }
+    .modal__box__info__speciality{
+        font-size: 13px;
+    }
+}
+@media(max-width: 376px){
+    .modal__wrapper__days__hours__item{
+        font-size: 12px;
+        padding: 5px 5px;
+    }
+}

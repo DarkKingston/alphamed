@@ -312,6 +312,7 @@ const modalSliderMonth = new Swiper('.modal-carousel-months', {
         nextEl: '.next8',
         prevEl: '.prev8',
     },
+    
 });
 
 const modalSliderDay = new Swiper('.modal-carousel-days', {
@@ -321,6 +322,17 @@ const modalSliderDay = new Swiper('.modal-carousel-days', {
         nextEl: '.next9',
         prevEl: '.prev9',
     },
+    breakpoints: {
+        280:{
+            slidesPerView: 4
+        },
+        340:{
+            slidesPerView: 5
+        },
+        410: {
+            slidesPerView: 7
+        }
+    }
 });
 
 //modal show
