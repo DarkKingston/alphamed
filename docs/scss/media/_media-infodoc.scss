@@ -1,3 +1,4 @@
+//responsive section infodoc
 @media(max-width: 330px){
     .crumbs__wrapper__item{
         font-size: 12px;
@@ -64,5 +65,112 @@
     }
     .infodoc__wrapper__box__item__about{
         margin-top: 5px;
+    }
+}
+
+//responsive section cost
+
+@media(max-width: 1120px){
+    .cost__wrapper__box:last-child{
+        max-width: 530px;
+    }
+}
+
+@media(max-width: 1080px){
+    .cost__wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cost__wrapper__box__menu{
+        justify-content: space-evenly;
+
+    }
+    .cost__wrapper__box__services__menu__item{
+        span{
+            width: 70px;
+            text-align: right;
+        }
+    }
+    .cost__wrapper__box:last-child{
+        max-width: unset;
+    }
+}
+
+@media(max-width: 480px){
+    .cost__wrapper__box__menu__item{
+        font-size: 14px;
+    }
+    .cost__wrapper__box__services__menu__item{
+        font-size: 13px;
+        line-height: 18px;
+        margin-bottom: 5px;
+    }
+    .cost__wrapper__box:first-child{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .cost__wrapper__box__services__about{
+        font-size: 13px;
+    }
+    .cost__wrapper__box__hours{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .cost__wrapper__box__hours__box__work{
+        justify-content: center;
+    }
+    .cost__wrapper__box__hours__box .cost__arrow__right{
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 57px;
+    }
+    .cost__wrapper__box__hours__box:last-child{
+        margin-top: 5px;
+    }
+    .slide_month{
+        font-size: 15px;
+    }
+    .slide_day{
+        font-size: 13px;
+    }
+    .cost-carousel-days .slide_day span{
+        font-size: 10px;
+    }
+    .cost__wrapper__box__days__hours__item{
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 440px){
+    .cost__wrapper__box__menu__item{
+        padding-right: 0;
+        font-size: 13px;
+    }
+    .cost__wrapper__box__street{
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .cost__wrapper__box:last-child{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .cost__wrapper__box__hours__box:last-child{
+        margin-top: 10px;
+    }
+}
+
+@media(max-width: 410px){
+    .cost__wrapper__box__days__hours__item{
+        padding: 8px 6px;
+    }
+}
+@media(max-width: 333px){
+    .cost__wrapper__box__days__hours__item{
+        padding: 6px 4px;
     }
 }

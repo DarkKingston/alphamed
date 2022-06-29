@@ -257,6 +257,17 @@ const costSliderDay = new Swiper('.cost-carousel-days', {
         nextEl: '.next7',
         prevEl: '.prev7',
     },
+    breakpoints: {
+        280:{
+            slidesPerView: 4
+        },
+        340:{
+            slidesPerView: 5
+        },
+        410: {
+            slidesPerView: 7
+        }
+    }
 });
 
 //hour select
