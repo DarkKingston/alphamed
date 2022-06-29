@@ -249,6 +249,7 @@ var slider = new Swiper('.slider', {
 
 let costItem = document.querySelectorAll('.cost__wrapper__box__menu__item');
 let costContent = document.querySelectorAll('.cost__wrapper__box__services');
+
 for(let i = 0; i < costItem.length; i++){
     costItem[i].addEventListener('click', function(){
         for(let j = 0; j < costItem.length; j++){
@@ -258,7 +259,18 @@ for(let i = 0; i < costItem.length; i++){
         costItem[i].classList.add('cost-item-active');
         costContent[i].classList.add('cost-services-show');
         
-    })
+    });
+}
+let costHour = document.querySelectorAll('.cost_hours_free');
+for(let i = 0; i < costHour.length; i++){
+    costHour[i].addEventListener('click', function(){
+        for(let j = 0; j < costHour.length; j++){
+            costHour[j].classList.remove('cost-hour-active');
+            
+        }
+        costHour[i].classList.add('cost-hour-active');
+        
+    });
 }
 
 //cost carousel in a file infodoc
@@ -304,26 +316,29 @@ for(let i = 0; i < day.length; i++){
         day[i].classList.add('slide-day-show');
     });
 }
-for(let i = 0; i < hour.length; i++){
-    hour[i].addEventListener('click', function(){
-        for(let j = 0; j < hour.length; j++){
-            hour[j].classList.remove('cost-hour-active');
-            hourModal[j].classList.remove('modal-hour-active');
-        }
-        hourModal[i].classList.add('modal-hour-active');
-        hour[i].classList.add('cost-hour-active');
-    });
+function modalShowed(){
     
-}
-for(let i = 0; i < hourModal.length; i++){
-    hourModal[i].addEventListener('click', function(){
-        for(let j = 0; j < hourModal.length; j++){
-            hourModal[j].classList.remove('modal-hour-active');
-        }
-        hourModal[i].classList.add('modal-hour-active');
+    for(let i = 0; i < hour.length; i++){
+        hour[i].addEventListener('click', function(){
+            for(let j = 0; j < hour.length; j++){
+                hour[j].classList.remove('cost-hour-active');
+                hourModal[j].classList.remove('modal-hour-active');
+            }
+            hourModal[i].classList.add('modal-hour-active');
+            hour[i].classList.add('cost-hour-active');
+        });
         
-    });
-    
+    }
+    for(let i = 0; i < hourModal.length; i++){
+        hourModal[i].addEventListener('click', function(){
+            for(let j = 0; j < hourModal.length; j++){
+                hourModal[j].classList.remove('modal-hour-active');
+            }
+            hourModal[i].classList.add('modal-hour-active');
+            
+        });
+        
+    }
 }
 
 //modal 

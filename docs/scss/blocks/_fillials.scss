@@ -63,6 +63,21 @@
     background: #F0F9FF;
     margin-top: 83px;
 }
+.doc__wrapper__box__info__data{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #030303;
+    margin-top: 2px;
+}
+
+.contact__wrapper__box__schedule__info__hour{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    padding-top: 6px;
+}
 
 .doc__wrapper{
     display: flex;
@@ -483,6 +498,7 @@
     display: block;
 }
 
+
 .modal-carousel-months{
     margin-top: 60px;
     .swiper-button-next, .swiper-button-prev{
@@ -671,6 +687,6 @@
 }
 
 .modal-show{
-    top: 17px;
+    top: 170px;
     transition: 0.5s all;
 }
