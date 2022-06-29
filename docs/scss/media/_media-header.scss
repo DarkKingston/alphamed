@@ -118,6 +118,14 @@
         justify-content: space-between;
         flex-direction: row;
     }
+    .menu .header__wrapper__box__logo{
+        margin-bottom: 20px;
+        width: 230px;
+        img{
+            width: 230px;
+            max-width: unset;
+        }
+    }
     .container__header{
         margin: unset;
         max-width: unset;

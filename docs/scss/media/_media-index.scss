@@ -348,6 +348,11 @@
         text-align: center;
     }
 }
+@media(max-width: 666px){
+    .main{
+        margin-top: 50px;
+    }
+}
 
 @media(max-width: 450px){
     .consulting__wrapper__box__card,.consulting__wrapper__box__item{

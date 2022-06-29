@@ -5,8 +5,11 @@
     flex-direction: row;
     align-items: center;
 }
-header{
+.header{
     border: 1px solid #C0DEED;
+    position: fixed;
+    width: 100vw;
+    z-index: 999;
 }
 .nav__wrapper{
     padding: 11px 0;
