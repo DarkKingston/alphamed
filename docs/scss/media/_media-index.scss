@@ -105,6 +105,9 @@
     .slide__wrapper__title{
         max-width: 300px;
     }
+    .street_wrapper{
+        width: 160px;
+    }
 }
 
 @media(max-width: 360px){
@@ -336,6 +339,9 @@
     .consulting__wrapper__box:nth-child(2){
         flex-direction: column;
     }
+    .consulting__wrapper__box__descr{
+        margin-top: 15px;
+    }
     .consulting__wrapper__box__card {
         margin-right: 15px;
         height: unset;
@@ -411,6 +417,9 @@
 }
 
 @media(max-width: 800px){
+    .service__wrapper__box:first-child{
+        margin-bottom: 10px;
+    }
     .diagnostic__info__box__menu{
         margin-right: 0;
     }
@@ -474,6 +483,9 @@
     }
     .diagnostic__info__box__btn{
         margin-bottom: 20px;
+    }
+    .diagnostic__info__box__menu{
+        padding-left: 13px !important;
     }
 }
 
@@ -719,7 +731,7 @@
         width: 240px;
         font-size: 12px;
     }
-    .pag3{
+    .pag13,.pag14{
         bottom: 0px !important;
     }
 }
@@ -727,18 +739,20 @@
 @media(max-width: 400px){
     .news{
         padding-top: 30px;
-        padding-bottom: 50px;
+        padding-bottom: 25px;
     }
     .news__wrapper__box__tabs{
         margin-top: 20px;
     }
+    .news .slider_btns, .diagnostic__det .slider_btns{
+        display: none;
+    }
 }
 
 @media(max-width: 430px){
-    .news{
-        .slider_btns{
-            top: 94px;
-            right: -10px;
-        }
+    
+    .news_carousel{margin-top: 25px;}
+    .news .slider_btns{
+        display: none;
     }
 }

@@ -6,8 +6,11 @@ body {
 	font-weight: 400;
 	font-size: 15px;
   color: #171717;
+  overflow-x: hidden;
 }
-
+*{
+  outline: none;
+}
 .wrapper {
 	display: flex;
 	flex-direction: column;

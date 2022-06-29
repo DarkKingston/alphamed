@@ -48,8 +48,10 @@
             font-size: 13px;
             line-height: 18px;
             color: #B2B2B2;
-            margin-right: 21px;
-            cursor: pointer;
+            margin-right: 5px;
+            cursor: pointer;           
+            height: 26px;
+            padding-top: 4px;
             &:last-child{
                 margin-right: 0;
             }
@@ -58,7 +60,6 @@
 }
 
 .lang-active{
-    height: 26px;
     border-bottom: 1px solid #0C4C91;
     color: $blue;
 }

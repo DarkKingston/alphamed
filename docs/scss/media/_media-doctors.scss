@@ -20,6 +20,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        fieldset{
+            margin-top: 5px;
+        }
     }
     .doctors{
         margin-top: 160px;

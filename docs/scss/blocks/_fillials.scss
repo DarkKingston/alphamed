@@ -601,6 +601,7 @@
     line-height: 18px;
     margin-left: 19px;
     margin-top: 6px;
+    margin-bottom: 10px;
 }
 
 .modal__wrap{
@@ -687,6 +688,14 @@
 }
 
 .modal-show{
-    top: 170px;
+    top: 70px;
     transition: 0.5s all;
+    z-index: 9999;
+}
+
+.modal__wrap{
+    display: none;
+}
+.modal-wrap-active{
+    display: inherit;
 }

@@ -36,6 +36,25 @@
     }
 }
 
+
+@media(max-width: 969px){
+    .slider__container {
+        max-width: 400px;
+    }
+    .article__btns{
+        top: 380px;
+    }
+}
+
+@media(max-width: 900px){
+    .slider__container {
+        max-width: 350px;
+    }
+    .article__btns{
+        top: 350px;
+    }
+}
+
 @media(max-width: 850px){
     .article-slider{
         margin-top: 10px;
@@ -86,6 +105,7 @@
     }
 
 }
+
 
 @media(max-width: 455px){
     .article__btns{

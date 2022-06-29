@@ -105,6 +105,11 @@
     .fillial__wrapper fieldset{
         margin-right: 0;
     }
+    .modal-services-show{
+        position: fixed;
+        top: 0;
+        height: 100vh;
+    }
 }
 
 @media(max-width: 625px){
@@ -159,7 +164,7 @@
     }
 }
 
-@media(max-width: 390px){
+@media(max-width: 400px){
     .modal__wrapper__days__hours__item{
         font-size: 13px;
         padding: 8px 5px;

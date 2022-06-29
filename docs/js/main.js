@@ -25,7 +25,8 @@ const swiperStreet = new Swiper('.streets', {
             
         },
         340: {
-            slidesPerView: 2
+            slidesPerView: 2,
+            spaceBetween: 10
         },
         480:{
             slidesPerView: 3
@@ -130,13 +131,13 @@ const newsSlider1 = new Swiper('.news_carousel1', {
     slidesPerView: 3,
     spaceBetween: 19,
     pagination: {
-        el: '.pag3',
+        el: '.pag13',
         type: 'fraction',
     },
 
     navigation: {
-        nextEl: '.next3',
-        prevEl: '.prev3',
+        nextEl: '.next13',
+        prevEl: '.prev13',
     },
     breakpoints: {
         280:{
@@ -155,13 +156,13 @@ const newsSlider2 = new Swiper('.news_carousel2', {
     slidesPerView: 3,
     spaceBetween: 19,
     pagination: {
-        el: '.pag3',
+        el: '.pag14',
         type: 'fraction',
     },
 
     navigation: {
-        nextEl: '.next3',
-        prevEl: '.prev3',
+        nextEl: '.next14',
+        prevEl: '.prev14',
     },
     breakpoints: {
         280:{
@@ -176,8 +177,24 @@ const newsSlider2 = new Swiper('.news_carousel2', {
       }
 });
 
-//tab news
+//sliders btn news
+let journalBtn = document.querySelector('.journal_slider_btn');
+let newsBtn = document.querySelector('.news_slider_btn');
 let newsTab = document.querySelectorAll('.news__wrapper__box__tabs__item');
+for(let i = 0; i < newsTab.length; i++){
+    newsTab[0].addEventListener('click', function(){
+        newsBtn.classList.remove('news-slider-active');
+        journalBtn.classList.add('journal-slider-active');
+    })
+    newsTab[1].addEventListener('click', function(){
+        journalBtn.classList.remove('journal-slider-active');
+        newsBtn.classList.add('news-slider-active');
+    })
+}
+
+
+
+//tab news
 let newsSlider = document.querySelectorAll('.news_carousel');
 for (let i = 0; i < newsTab.length; i++) {
     newsTab[i].addEventListener("click", function () {
@@ -308,6 +325,7 @@ const costSliderDay = new Swiper('.cost-carousel-days', {
 let hour = document.querySelectorAll('.cost_hours_free');
 let hourModal = document.querySelectorAll('.modal_hours_free');
 let day = document.querySelectorAll('.slide_day_active');
+let modalForm = document.querySelector('.modal__wrap');
 for(let i = 0; i < day.length; i++){
     day[i].addEventListener('click', function(){
         for(let j = 0; j < day.length; j++){
@@ -335,10 +353,12 @@ function modalShowed(){
                 hourModal[j].classList.remove('modal-hour-active');
             }
             hourModal[i].classList.add('modal-hour-active');
+            modalForm.classList.add('modal-wrap-active');
             
         });
         
     }
+    
 }
 
 //modal 
@@ -384,6 +404,9 @@ for(let i = 0; i < modalShow.length; i++){
     modalClose.addEventListener('click', function(){
         modal.classList.remove('modal-show');
     })
+    // $('.modal_show').on('click', () => {
+    //     $('html').animate({scrollTop: 0}, 0);
+    // })
 }
 
 //script toggle menu/navbar
