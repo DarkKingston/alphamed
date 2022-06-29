@@ -138,17 +138,6 @@ const newsSlider1 = new Swiper('.news_carousel1', {
         nextEl: '.next3',
         prevEl: '.prev3',
     },
-    breakpoints: {
-        280:{
-            slidesPerView: 1
-        },
-        590:{
-            slidesPerView:2
-        },
-        890: {
-            slidesPerView: 3
-        }
-      }
 });
 const newsSlider2 = new Swiper('.news_carousel2', {
     direction: 'horizontal',
@@ -212,6 +201,16 @@ var sliderThumbnail = new Swiper('.slider-thumbnail', {
     freeMode: true,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
+    breakpoints: {
+        280:{
+            slidesPerView: 2,
+            spaceBetween: 10
+        },
+        850: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        }
+    }
 });
 
 var slider = new Swiper('.slider', {
