@@ -1,0 +1,68 @@
+@media(max-width: 330px){
+    .crumbs__wrapper__item{
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 920px){
+    .infodoc__wrapper__box:first-child img{
+        object-fit: contain;
+    }
+    .infodoc__wrapper__box__item__name{
+        font-size: 28px;
+        line-height: 30px;
+    }
+    .infodoc__wrapper__box__item__info__speciality{
+        font-size: 13px;
+        max-width: 360px;
+    }
+    .infodoc__wrapper__box__item__about__experience{
+        font-size: 13px;
+    }
+    .infodoc__wrapper__box__item__about__btn{
+        height: 30px;
+        width: 180px;
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 768px){
+    .infodoc{
+        padding: 20px 0;
+    }
+    .infodoc__wrapper__box:last-child{
+        display: flex;
+        flex-direction: column;
+    }
+    .infodoc__wrapper__box__item__info,.infodoc__wrapper__box__item__about, .infodoc__wrapper__box__item__name{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .infodoc__wrapper__box__item__info__share{
+        margin-top: 5px;
+    }
+    .infodoc__wrapper__box__item__about__btn{
+        margin-top: 5px;
+    }
+}
+
+@media(max-width: 570px){
+    .infodoc__wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .infodoc__wrapper__box:first-child{
+        margin-right: 0;
+    }
+}
+
+@media(max-width: 390px){
+    .infodoc__wrapper__box__item:first-child,.infodoc__wrapper__box__item__about__experience{
+        flex-direction: column;
+    }
+    .infodoc__wrapper__box__item__about{
+        margin-top: 5px;
+    }
+}
